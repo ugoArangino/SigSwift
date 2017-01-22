@@ -1,5 +1,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "Example"
+    name: "Example",
+    dependencies: [
+        .Package(url: "../", majorVersion: 1, minor: 0),
+    ]
 )
